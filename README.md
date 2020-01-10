@@ -1,12 +1,14 @@
-# pandas-dashboard
+# pandas-dashboard 
+
+## Build Setup
 
 
 ```bash
 # clone the project
-git clone https://github.com/cloustone/pandas-dashboard.git
+git clone https://github.com/PanJiaChen/vue-admin-template.git
 
 # enter the project directory
-cd pandas-dashboard
+cd vue-admin-template
 
 # install dependency
 npm install
