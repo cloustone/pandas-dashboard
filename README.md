@@ -8,7 +8,7 @@
 git clone https://github.com/cloudstone/pandas-dashboard.git
 
 # enter the project directory
-cd vue-admin-template
+cd pandas-dashboard 
 
 # install dependency
 npm install
