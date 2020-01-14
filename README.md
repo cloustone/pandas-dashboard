@@ -1,5 +1,7 @@
 # pandas-dashboard
 
+![](docs/images/dashboard.png)
+
 ## Build Setup
 
 
