@@ -54,27 +54,47 @@ export const constantRoutes = [
   },
 
   {
+    path: '/projects',
+    component: Layout,
+    redirect: '/projects/list',
+    name: 'Projects',
+    meta: { title: 'Projects', icon: 'example' },
+    children: [
+      {
+        path: 'list',
+        name: 'Table',
+        component: () => import('@/views/project/index'),
+        meta: { title: 'My Projects', icon: 'table' }
+      },
+      {
+        path: 'index',
+        name: 'Device',
+        component: () => import('@/views/form/index'),
+        meta: { title: 'Create New Project', icon: 'form' }
+      }
+    ]
+  },
+  {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
     name: 'Project',
-    meta: { title: 'Projects', icon: 'example' },
+    meta: { title: 'Models', icon: 'example' },
     children: [
       {
         path: 'table',
         name: 'Table',
         component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        meta: { title: 'Models List', icon: 'table' }
       },
       {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/tree/index'),
-        meta: { title: 'Tree', icon: 'tree' }
+        path: 'index',
+        name: 'Device',
+        component: () => import('@/views/form/index'),
+        meta: { title: 'Create Model', icon: 'form' }
       }
     ]
   },
-
   {
     path: '/form',
     component: Layout,
@@ -89,59 +109,18 @@ export const constantRoutes = [
   },
 
   {
-    path: '/nested',
+    path: '/rulechain',
     component: Layout,
-    redirect: '/nested/menu1',
-    name: 'Nested',
     meta: {
       title: 'Rulechains',
       icon: 'nested'
     },
     children: [
       {
-        path: 'menu1',
-        component: () => import('@/views/nested/menu1/index'), // Parent router-view
-        name: 'Menu1',
-        meta: { title: 'Menu1' },
-        children: [
-          {
-            path: 'menu1-1',
-            component: () => import('@/views/nested/menu1/menu1-1'),
-            name: 'Menu1-1',
-            meta: { title: 'Menu1-1' }
-          },
-          {
-            path: 'menu1-2',
-            component: () => import('@/views/nested/menu1/menu1-2'),
-            name: 'Menu1-2',
-            meta: { title: 'Menu1-2' },
-            children: [
-              {
-                path: 'menu1-2-1',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-1'),
-                name: 'Menu1-2-1',
-                meta: { title: 'Menu1-2-1' }
-              },
-              {
-                path: 'menu1-2-2',
-                component: () => import('@/views/nested/menu1/menu1-2/menu1-2-2'),
-                name: 'Menu1-2-2',
-                meta: { title: 'Menu1-2-2' }
-              }
-            ]
-          },
-          {
-            path: 'menu1-3',
-            component: () => import('@/views/nested/menu1/menu1-3'),
-            name: 'Menu1-3',
-            meta: { title: 'Menu1-3' }
-          }
-        ]
-      },
-      {
-        path: 'menu2',
-        component: () => import('@/views/nested/menu2/index'),
-        meta: { title: 'menu2' }
+        path: 'list',
+        name: 'list',
+        component: () => import('@/views/table/index'),
+        meta: { title: 'Rule Chain', icon: 'table' }
       }
     ]
   },
