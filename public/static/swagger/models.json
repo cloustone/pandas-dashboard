@@ -1,0 +1,1165 @@
+{
+  "swagger": "2.0",
+  "paths": {},
+  "definitions": {
+    "Dashboard": {
+      "description": "Dashboard Dashboard",
+      "type": "object",
+      "properties": {
+        "deviceActiveNumber": {
+          "type": "string",
+          "x-go-name": "DeviceActiveNumber"
+        },
+        "deviceModelActiveNumber": {
+          "type": "string",
+          "x-go-name": "DeviceModelActiveNumber"
+        },
+        "deviceNumber": {
+          "type": "string",
+          "x-go-name": "DeviceNumber"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "modelNumber": {
+          "type": "string",
+          "x-go-name": "DeviceModelNumber"
+        },
+        "projectActivieNumber": {
+          "type": "string",
+          "x-go-name": "ProjectActiveNumber"
+        },
+        "projectNumber": {
+          "type": "string",
+          "x-go-name": "ProjectNumber"
+        },
+        "workshopActiveNumber": {
+          "type": "string",
+          "x-go-name": "WorkshopActiveNumber"
+        },
+        "workshopNumber": {
+          "type": "string",
+          "x-go-name": "WorkshopNumber"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DataModel": {
+      "type": "object",
+      "title": "DataModel ...",
+      "properties": {
+        "domain": {
+          "type": "string",
+          "x-go-name": "Domain"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataModelField"
+          },
+          "x-go-name": "Fields"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DataModelField": {
+      "type": "object",
+      "title": "DataModelField ...",
+      "properties": {
+        "defaultValue": {
+          "type": "string",
+          "x-go-name": "DefaultValue"
+        },
+        "key": {
+          "type": "string",
+          "x-go-name": "Key"
+        },
+        "type": {
+          "type": "string",
+          "x-go-name": "Type"
+        },
+        "value": {
+          "type": "string",
+          "x-go-name": "Value"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DataSource": {
+      "type": "object",
+      "properties": {
+        "certFile": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "uint8"
+          },
+          "x-go-name": "CertFile"
+        },
+        "connectURL": {
+          "type": "string",
+          "x-go-name": "ConnectURL"
+        },
+        "isProvider": {
+          "type": "boolean",
+          "x-go-name": "IsProvider"
+        },
+        "isTlsEnabled": {
+          "type": "boolean",
+          "x-go-name": "IsTLSEnabled"
+        },
+        "keyFile": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "uint8"
+          },
+          "x-go-name": "KeyFile"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "protocol": {
+          "type": "string",
+          "x-go-name": "Protocol"
+        },
+        "servicePort": {
+          "type": "string",
+          "x-go-name": "ServicePort"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Deployment": {
+      "description": "Deployment Deployment",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "reader": {
+          "type": "string",
+          "x-go-name": "Reader"
+        },
+        "readerConfigs": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "x-go-name": "ReaderConfigs"
+        },
+        "ruleChainId": {
+          "type": "string",
+          "x-go-name": "RuleChainID"
+        },
+        "status": {
+          "type": "string",
+          "x-go-name": "Status"
+        },
+        "userId": {
+          "type": "string",
+          "x-go-name": "UserID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DeploymentControl": {
+      "description": "DeploymentControl DeploymentControl",
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string",
+          "x-go-name": "Action"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Device": {
+      "description": "Device Device",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "dataModels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataModel"
+          },
+          "x-go-name": "Values"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "modelID": {
+          "type": "string",
+          "x-go-name": "ModelID"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "projectID": {
+          "type": "string",
+          "x-go-name": "ProjectID"
+        },
+        "status": {
+          "type": "string",
+          "x-go-name": "Status"
+        },
+        "userID": {
+          "type": "string",
+          "x-go-name": "UserID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DeviceData": {
+      "description": "DeviceData DeviceData",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DeviceLog": {
+      "description": "DeviceLog DeviceLog",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "DeviceModel": {
+      "description": "DeviceModel DeviceModel",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "childModels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-go-name": "ChildModels"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "dataModel": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataModel"
+          },
+          "x-go-name": "DataModels"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        },
+        "domain": {
+          "type": "string",
+          "x-go-name": "Domain"
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Endpoint"
+          },
+          "x-go-name": "Endpoints"
+        },
+        "icon": {
+          "type": "string",
+          "x-go-name": "Icon"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "isCompound": {
+          "type": "boolean",
+          "x-go-name": "IsCompound"
+        },
+        "isLogical": {
+          "type": "boolean",
+          "x-go-name": "IsLogical"
+        },
+        "isPreset": {
+          "type": "boolean",
+          "x-go-name": "IsPreset"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "userId": {
+          "type": "string",
+          "x-go-name": "UserID"
+        },
+        "version": {
+          "type": "string",
+          "x-go-name": "Version"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Endpoint": {
+      "description": "Endpoint Endpoint",
+      "type": "object",
+      "properties": {
+        "format": {
+          "type": "string",
+          "x-go-name": "Format"
+        },
+        "models": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "x-go-name": "Models"
+        },
+        "path": {
+          "type": "string",
+          "x-go-name": "Path"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Error": {
+      "description": "Error Error",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32",
+          "x-go-name": "Code"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "LogData": {
+      "type": "object",
+      "properties": {
+        "line": {
+          "type": "string",
+          "x-go-name": "Line"
+        },
+        "meta": {
+          "$ref": "#/definitions/LogMetaInfo"
+        },
+        "payload": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "uint8"
+          },
+          "x-go-name": "Payload"
+        },
+        "result": {
+          "type": "string",
+          "x-go-name": "Result"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "LogMetaInfo": {
+      "type": "object",
+      "properties": {
+        "deviceId": {
+          "type": "string",
+          "x-go-name": "DeviceId"
+        },
+        "deviceName": {
+          "type": "string",
+          "x-go-name": "DeviceName"
+        },
+        "direction": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Direction"
+        },
+        "messageId": {
+          "type": "string",
+          "x-go-name": "MessageId"
+        },
+        "projectId": {
+          "type": "string",
+          "x-go-name": "ProjectId"
+        },
+        "rindex": {
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "RIndex"
+        },
+        "time": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "Time"
+        },
+        "type": {
+          "type": "string",
+          "x-go-name": "Type"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "LoginToken": {
+      "description": "LoginToken login token",
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "description": "access token",
+          "type": "string",
+          "x-go-name": "AccessToken"
+        },
+        "token_type": {
+          "description": "token type",
+          "type": "string",
+          "x-go-name": "TokenType"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "ModelTypeInfo": {
+      "description": "ModelTypeInfo is added to model which should be saved into factory",
+      "type": "object",
+      "properties": {
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Principal": {
+      "description": "Principal Principal",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-go-name": "Roles"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Project": {
+      "description": "Project Project",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "last_updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "status": {
+          "type": "string",
+          "x-go-name": "Status"
+        },
+        "user_id": {
+          "type": "string",
+          "x-go-name": "UserID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "ProjectSummary": {
+      "description": "ProjectSummary ProjectSummary",
+      "type": "object",
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "RuleChain": {
+      "description": "RuleChain RuleChain",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "bool": {
+          "type": "boolean",
+          "x-go-name": "Root"
+        },
+        "chainId": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "dataSource": {
+          "$ref": "#/definitions/DataSource"
+        },
+        "debugMode": {
+          "type": "boolean",
+          "x-go-name": "DebugMode"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        },
+        "domain": {
+          "type": "string",
+          "x-go-name": "Domain"
+        },
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "payload": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "uint8"
+          },
+          "x-go-name": "Payload"
+        },
+        "status": {
+          "type": "string",
+          "x-go-name": "Status"
+        },
+        "type": {
+          "type": "string",
+          "x-go-name": "Type"
+        },
+        "userId": {
+          "type": "string",
+          "x-go-name": "UserID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Search": {
+      "type": "object",
+      "properties": {
+        "meta": {
+          "$ref": "#/definitions/LogMetaInfo"
+        },
+        "pageSize": {
+          "type": "integer",
+          "format": "int32",
+          "x-go-name": "PageSize"
+        },
+        "pos": {
+          "type": "integer",
+          "format": "int32",
+          "x-go-name": "Pos"
+        },
+        "sinice": {
+          "type": "string",
+          "x-go-name": "Since"
+        },
+        "type": {
+          "$ref": "#/definitions/SearchType"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "SearchType": {
+      "type": "integer",
+      "format": "int64",
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Timedef": {
+      "description": "Timedef timedef",
+      "type": "object",
+      "properties": {
+        "created": {
+          "description": "created",
+          "type": "string",
+          "x-go-name": "Created",
+          "readOnly": true
+        },
+        "updated": {
+          "description": "updated",
+          "type": "string",
+          "x-go-name": "Updated",
+          "readOnly": true
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "User": {
+      "description": "User user",
+      "type": "object",
+      "properties": {
+        "balance": {
+          "description": "available balance of user",
+          "type": "string",
+          "x-go-name": "Balance"
+        },
+        "created": {
+          "description": "created",
+          "type": "string",
+          "x-go-name": "Created",
+          "readOnly": true
+        },
+        "email": {
+          "description": "email",
+          "type": "string",
+          "x-go-name": "Email"
+        },
+        "id": {
+          "description": "id",
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "phone": {
+          "description": "phone",
+          "type": "string",
+          "x-go-name": "Phone"
+        },
+        "roles": {
+          "description": "roles",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-go-name": "Roles"
+        },
+        "status": {
+          "description": "status",
+          "type": "string",
+          "enum": [
+            "[OFFLINE ONLINE]"
+          ],
+          "x-go-name": "Status"
+        },
+        "totalFund": {
+          "description": "total fund",
+          "type": "string",
+          "x-go-name": "TotalFund"
+        },
+        "updated": {
+          "description": "updated",
+          "type": "string",
+          "x-go-name": "Updated",
+          "readOnly": true
+        },
+        "username": {
+          "description": "username",
+          "type": "string",
+          "x-go-name": "Username"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "UserLoginRecord": {
+      "description": "UserLoginRecord user login record",
+      "type": "object",
+      "required": [
+        "number"
+      ],
+      "properties": {
+        "date": {
+          "description": "date",
+          "type": "string",
+          "x-go-name": "Date"
+        },
+        "number": {
+          "description": "number",
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "Number"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "UserOverview": {
+      "description": "UserOverview user overview",
+      "type": "object",
+      "required": [
+        "dayAveLoginNum",
+        "onlineNum",
+        "todayLoginNum",
+        "totalNum"
+      ],
+      "properties": {
+        "dayAveLoginNum": {
+          "description": "day ave login num",
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "DayAveLoginNum"
+        },
+        "onlineNum": {
+          "description": "online num",
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "OnlineNum"
+        },
+        "todayLoginNum": {
+          "description": "today login num",
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "TodayLoginNum"
+        },
+        "totalNum": {
+          "description": "total num",
+          "type": "integer",
+          "format": "int64",
+          "x-go-name": "TotalNum"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Variable": {
+      "description": "Variable Variable",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "bindedDeviceID": {
+          "type": "string",
+          "x-go-name": "BindedDeviceID"
+        },
+        "bindedEndpoint": {
+          "type": "string",
+          "x-go-name": "BindedEndpoint"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "projectID": {
+          "type": "string",
+          "x-go-name": "ProjectID"
+        },
+        "type": {
+          "type": "string",
+          "x-go-name": "Type"
+        },
+        "value": {
+          "type": "object",
+          "x-go-name": "Value"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "View": {
+      "description": "View View",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "payload": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "format": "uint8"
+          },
+          "x-go-name": "Payload"
+        },
+        "projectID": {
+          "type": "string",
+          "x-go-name": "ProjectID"
+        },
+        "status": {
+          "type": "string",
+          "x-go-name": "Status"
+        },
+        "variables": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-go-name": "Variables"
+        },
+        "workshopID": {
+          "type": "string",
+          "x-go-name": "WorkshopID"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Widget": {
+      "description": "Widget Widget",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dataModel": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataModel"
+          },
+          "x-go-name": "DataModels"
+        },
+        "domain": {
+          "type": "string",
+          "x-go-name": "Domain"
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Endpoint"
+          },
+          "x-go-name": "Endpoints"
+        },
+        "icon": {
+          "type": "string",
+          "x-go-name": "Icon"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "isCompound": {
+          "type": "boolean",
+          "x-go-name": "IsCompound"
+        },
+        "isLogical": {
+          "type": "boolean",
+          "x-go-name": "IsLogical"
+        },
+        "isPreset": {
+          "type": "boolean",
+          "x-go-name": "IsPreset"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "version": {
+          "type": "string",
+          "x-go-name": "Version"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    },
+    "Workshop": {
+      "description": "Workshop Workshop",
+      "type": "object",
+      "properties": {
+        "CreatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "DeletedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "ID": {
+          "type": "integer",
+          "format": "uint64"
+        },
+        "UpdatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "CreatedAt"
+        },
+        "description": {
+          "type": "string",
+          "x-go-name": "Description"
+        },
+        "id": {
+          "type": "string",
+          "x-go-name": "ID"
+        },
+        "lastUpdatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "x-go-name": "LastUpdatedAt"
+        },
+        "modelTypeName": {
+          "type": "string",
+          "x-go-name": "ModelTypeName"
+        },
+        "name": {
+          "type": "string",
+          "x-go-name": "Name"
+        },
+        "projectId": {
+          "type": "string",
+          "x-go-name": "ProjectID"
+        },
+        "status": {
+          "type": "string",
+          "x-go-name": "Status"
+        },
+        "userID": {
+          "type": "string",
+          "x-go-name": "UserID"
+        },
+        "views": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-go-name": "ViewIDs"
+        }
+      },
+      "x-go-package": "github.com/cloustone/pandas/models"
+    }
+  }
+}
